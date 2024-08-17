@@ -1,0 +1,416 @@
+@media(min-width:990px){
+    
+    body{
+        background-color: black;
+        color: white;
+        overflow-x: hidden; /* This will hide the horizontal scrollbar */
+    
+    }
+    .navbar{
+        display: flex;
+        margin: 20px 20px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .btn{
+        border-radius: 5px;
+        border: 1px grey solid;
+        padding: 8px 16px;
+        background-color: white;
+        color: black;
+        margin-bottom: 4px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .btn:hover{
+        color: rgb(255, 255, 255);
+        background-color: black;
+    }
+    .logo{
+        height: 50px;
+        width: 180px;
+        color: white;
+        background-color: white;
+    }
+    
+    
+    .story-container{
+        width: 100%;
+        margin: 20px 20px;
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+        overflow-x: scroll; 
+    }
+    .story-container::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        background: transparent; /* Optional: Just in case you want to keep the scrollbar background hidden */
+    }
+    
+    .story-container ::-webkit-scrollbar {
+        display: none ;
+    }
+    
+    
+    
+    .story{
+        text-align: center;
+    }
+    
+    .story-img{
+        height: 90px;
+        width: 90px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 2px solid;
+        
+        box-shadow: 0 0 0 0.1px rgb(236, 7, 7);
+        border-color:1px solid red;
+    
+    }
+    
+    .name{
+       font-size: 15px;
+    }
+    
+    .container{
+        width: 990px;
+        margin: 40px auto;
+        display: flex;
+        gap: 40px;
+        justify-content: left;
+    
+    }
+    
+    
+    .feed{
+        width: 560px;
+        border: 1px solid lightgray;
+        border-radius: 14px;
+        padding: 10px;
+        margin-bottom: 26px;
+        box-shadow: 1px 4px 6px rgba(211, 205, 205, 0.308), /* Slight shadow below */
+    
+    }
+    .profile{
+        width: 100%;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        margin-bottom: 6px;
+        object-fit: cover;
+        justify-content: space-between;
+    }
+    .follow{
+        cursor: pointer;
+        margin-left: 13px;
+        font-size: 14px;
+    }
+    .bi-three-dots{
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    
+    }
+    .bi-three-dots:hover{
+        transform: scale(1.2);
+    }
+    .leftp{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .feed-img{
+        width: 100%;
+       
+    }
+    .follow{
+        font: optional;
+        color: rgba(81, 81, 232, 0.904);
+        
+        margin-top: 3px;
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 5px;
+    
+    }
+    .left{
+        font-size: 25px;
+        display: flex;
+        gap: 15px;
+        
+    }
+    .bi-bookmark{
+        font-size: 25px;
+        transition: 0.3ms;
+        cursor: pointer;
+    
+    }
+    .bi-bookmark:hover{
+        transform: scale(1.2);
+    }
+    
+    .bi-heart:hover{
+        transform: scale(1.2);
+    
+    }
+    .bi-heart{
+        transition: 0.3s;
+        cursor: pointer;
+    
+       
+    }
+    .bi-chat{
+        transition: 0.3;
+        cursor: pointer;
+    
+    }
+    .bi-chat:hover{
+        transform: scale(1.2);
+    }
+    .bi-send{
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .bi-send:hover{
+        transform: scale(1.2);
+    }
+    .container > .sidebar{
+        position: sticky;
+    top: 0; 
+        
+        margin-left: 40px;
+    }
+    .apps{
+        display: flex;
+        gap: 10px;
+        height: 40px;
+        width: 50px;
+        cursor: pointer;
+        
+        
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600){
+    body{
+        background-color: black;
+        color: white;
+        overflow-x: hidden; /* This will hide the horizontal scrollbar */
+    
+    }
+    .navbar{
+        display: flex;
+        margin: 20px 20px;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .btn{
+        border-radius: 5px;
+        border: 1px grey solid;
+        padding: 4px 8px;
+        background-color: white;
+        color: black;
+        margin-bottom: 4px;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .btn:hover{
+        color: rgb(255, 255, 255);
+        background-color: black;
+    }
+    .logo{
+        height: 50px;
+        width: 180px;
+        color: white;
+        background-color: white;
+    }
+    
+    
+    .story-container{
+        width: 100%;
+        margin: 10px 15px;
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+    }
+    
+    
+    .story-container ::-webkit-scrollbar {
+        display: none ;
+    }
+    
+    
+    
+    .story{
+        text-align: center;
+    }
+    
+    .story-img{
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        object-fit: cover;
+        border: 2px solid;
+        
+        box-shadow: 0 0 0 0.1px rgb(236, 7, 7);
+        border-color:1px solid red;
+    
+    }
+    
+    .name{
+       font-size: 10px;
+    }
+    
+    .container{
+        width: 990px;
+        margin: 40px auto;
+        display: flex;
+        gap: 40px;
+        justify-content: left;
+    
+    }
+    
+    
+    .feed{
+        width: 400px;
+        border: 1px solid lightgray;
+        border-radius: 14px;
+        padding: 10px;
+        margin-bottom: 26px;
+        box-shadow: 1px 4px 6px rgba(211, 205, 205, 0.308), /* Slight shadow below */
+    
+    }
+    .profile{
+        width: 100%;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        margin-bottom: 6px;
+        object-fit: cover;
+        justify-content: space-between;
+    }
+    .follow{
+        cursor: pointer;
+        margin-left: 13px;
+        font-size: 14px;
+    }
+    .bi-three-dots{
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+    
+    }
+    .bi-three-dots:hover{
+        transform: scale(1.2);
+    }
+    .leftp{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .profile-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .feed-img{
+        width: 100%;
+       
+    }
+    .follow{
+        font: optional;
+        color: rgba(81, 81, 232, 0.904);
+        
+        margin-top: 3px;
+    }
+    
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        margin-top: 5px;
+    
+    }
+    .left{
+        font-size: 25px;
+        display: flex;
+        gap: 15px;
+        
+    }
+    .bi-bookmark{
+        font-size: 25px;
+        transition: 0.3ms;
+        cursor: pointer;
+    
+    }
+    .bi-bookmark:hover{
+        transform: scale(1.2);
+    }
+    
+    .bi-heart:hover{
+        transform: scale(1.2);
+    
+    }
+    .bi-heart{
+        transition: 0.3s;
+        cursor: pointer;
+    
+       
+    }
+    .bi-chat{
+        transition: 0.3;
+        cursor: pointer;
+    
+    }
+    .bi-chat:hover{
+        transform: scale(1.2);
+    }
+    .bi-send{
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .bi-send:hover{
+        transform: scale(1.2);
+    }
+    .sidebar{
+     
+        
+        margin-left: 40px;
+    }
+    .apps{
+       
+       
+        height: 40px;
+        width: 50px;
+        cursor: pointer;
+        
+        
+    }
+}
